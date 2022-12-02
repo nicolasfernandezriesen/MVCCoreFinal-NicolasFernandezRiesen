@@ -69,6 +69,37 @@ namespace SistemaWebEmpleado.Controllers
             }
         }
 
+        public IActionResult Modify(int id)
+        {
+            Empleado empleado = context.Empleados.Find(id);
+
+            if (empleado == null)
+            {
+                return BadRequest();
+            }
+            else
+            {
+                return View("Modify", empleado);
+            }
+        }
+
+        [HttpPost]
+        public IActionResult Modify(Empleado empleado)
+        {
+            Empleado DbEmpleado = context.Empleados.Find(empleado.EmpleadoId);
+
+            if (DbEmpleado != null)
+            {
+                DbEmpleado.Nombre = empleado.Nombre;
+                DbEmpleado.Apellido = empleado.Apellido;
+                DbEmpleado.Dni = empleado.Dni;
+                DbEmpleado.Legajo = empleado.Legajo;
+                DbEmpleado.Titulo = empleado.Titulo;
+                context.SaveChanges();
+            }
+
+            return RedirectToAction("Index");
+        }
         public IActionResult Delete(int id)
         {
             Empleado empleado = context.Empleados.Find(id);

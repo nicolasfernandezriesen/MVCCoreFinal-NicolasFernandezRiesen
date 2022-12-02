@@ -1,0 +1,52 @@
+﻿@model SistemaWebEmpleado.Models.Empleado
+@{
+    ViewData["Title"] = "Modify";
+}
+
+<h1>Modificacion del empleado</h1>
+
+<form asp-action="Modify">
+<div>
+    <div style="display:none">
+        <input asp-for="EmpleadoId" />
+    </div>
+    <div>
+        @Html.DisplayNameFor(model => model.Nombre);
+        @Html.DisplayFor(model => model.Nombre);
+    </div>
+    <div>
+        <input asp-for="Nombre"/>
+    </div>
+     <div>
+        @Html.DisplayNameFor(model => model.Apellido);
+        @Html.DisplayFor(model => model.Apellido);
+    </div>
+    <div>
+        <input asp-for="Apellido"/>
+    </div>
+    <div>
+        @Html.DisplayNameFor(model => model.Dni);
+        @Html.DisplayFor(model => model.Dni);
+    </div>
+    <div>
+        <input asp-for="Dni"/>
+    </div>
+    <div>
+        @Html.DisplayNameFor(model => model.Legajo);
+        @Html.DisplayFor(model => model.Legajo);
+    </div>
+    <div>
+        <input asp-for="Legajo"/>
+    </div>
+    <div>
+        @Html.DisplayNameFor(model => model.Titulo);
+        @Html.DisplayFor(model => model.Titulo);
+    </div>
+    <div>
+        <input asp-for="Titulo"/>
+    </div>
+    <div>
+        <input type="submit" value="Guardar cambios" class="btn"/>
+    </div>
+</div>
+</form>

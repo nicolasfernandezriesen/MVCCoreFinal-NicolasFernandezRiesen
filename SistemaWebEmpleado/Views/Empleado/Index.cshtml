@@ -27,9 +27,10 @@
                 <td>@Html.DisplayFor(modelItem => item.Dni)</td>
                 <td>@Html.DisplayFor(modelItem => item.Legajo)</td>
                 <td>@Html.ActionLink(item.Titulo, "ListarEmpleadoTitulo", new{ titulo = item.Titulo})</td>   
-                <td>
+                <td style="margin-left: 6px;">
                     <a asp-action="Delete" asp-route-id="@item.EmpleadoId">Borrar</a>
                     <a asp-action="Details" asp-route-id="@item.EmpleadoId">Detalle</a>
+                    <a asp-action="Modify" asp-route-id="@item.EmpleadoId">Modificar</a>
                 </td>
             </tr>
         }
