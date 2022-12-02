@@ -8,22 +8,33 @@
 <form asp-action="Create">
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
     <div>
-        <label asp-for="Nombre"></label>
-        <input asp-for="Nombre"/>
-        <span asp-validation-for="Nombre"></span>
-        <label asp-for="Apellido"></label>
-        <input asp-for="Apellido"/>
-        <span asp-validation-for="Apellido"></span>
-        <label asp-for="Dni"></label>
-        <input asp-for="Dni"/>
-        <span asp-validation-for="Dni"></span>
-        <label asp-for="Legajo"></label>
-        <input asp-for="Legajo"/>
-        <span asp-validation-for="Legajo"></span>
-        <label asp-for="Titulo"></label>
-        <input asp-for="Titulo"/>
-        <span asp-validation-for="Titulo"></span>
+        <div>
+            <label asp-for="Nombre"></label>
+            <input asp-for="Nombre"/>
+            <span asp-validation-for="Nombre"></span>
+        </div>
+        <div>
+            <label asp-for="Apellido"></label>
+           <input asp-for="Apellido"/>
+            <span asp-validation-for="Apellido"></span>
+        </div>
+        <div>
+            <label asp-for="Dni"></label>
+            <input asp-for="Dni"/>
+            <span asp-validation-for="Dni"></span>
+        </div>
+        <div>
+            <label asp-for="Legajo"></label>
+            <input asp-for="Legajo"/>
+            <span asp-validation-for="Legajo"></span>
+        </div>
+        <div>
+            <label asp-for="Titulo"></label>
+            <input asp-for="Titulo"/>
+            <span asp-validation-for="Titulo"></span>
+        </div>
     </div>
+
     <div>
         <input type="submit" value="Crear" class="btn"/>
     </div>
