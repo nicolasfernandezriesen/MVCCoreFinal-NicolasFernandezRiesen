@@ -19,6 +19,10 @@
             @ViewBag.Message
         }
     </div>
+    <div id="nav">
+        <a asp-action="Index" asp-controller="Home">Home</a>
+        <a asp-action="Index" asp-controller="Empleado">Empleado</a>
+    </div>
     <div id="content"> 
         @RenderBody()
     </div>

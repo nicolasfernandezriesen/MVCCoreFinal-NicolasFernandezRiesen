@@ -16,12 +16,18 @@
     height: 50px;
     width: 100%;
     text-align: left;
-    background-color: yellowgreen;
 }
 
-#content{
+#nav{
+    height: 20px;
+    width: 100%;
+    text-align: right;
+    background-color: lightgreen;
+}
+
+#content {
     height: 800px;
-    text-align:center;
+    text-align: center;
 }
 
 #footer{
