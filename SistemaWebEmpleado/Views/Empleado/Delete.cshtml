@@ -3,6 +3,10 @@
     ViewData["Title"] = "Delete";
 }
 
+@section SideBar{
+    Administracion de empleados
+}
+
 <p>Desea ELIMINAR este empleado?</p>
 
 <form asp-action="DeleteConfirmed" asp-route-id="@Model.EmpleadoId">
