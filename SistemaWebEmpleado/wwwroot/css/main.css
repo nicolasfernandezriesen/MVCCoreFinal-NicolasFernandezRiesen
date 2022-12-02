@@ -1,0 +1,31 @@
+﻿*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+#header{
+    height: 120px;
+    width: 100%;
+    text-align: right;
+    font-size: xx-large;
+    background-color: cornflowerblue;
+}
+
+#sidebar{
+    height: 50px;
+    width: 100%;
+    text-align: left;
+    background-color: yellowgreen;
+}
+
+#content{
+    height: 800px;
+    text-align:center;
+}
+
+#footer{
+    height:30px;
+    background-color: dodgerblue;
+    text-align:center;
+}

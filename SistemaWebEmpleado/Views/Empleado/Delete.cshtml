@@ -1,0 +1,24 @@
+﻿@model SistemaWebEmpleado.Models.Empleado
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<p>Desea ELIMINAR este empleado?</p>
+
+<form asp-action="DeleteConfirmed" asp-route-id="@Model.EmpleadoId">
+    <div>
+        <span>@Html.DisplayNameFor(model => model.Nombre)</span>
+        <span>@Html.DisplayFor(model => model.Nombre)</span>
+        <span>@Html.DisplayNameFor(model => model.Apellido)</span>
+        <span>@Html.DisplayFor(model => model.Apellido)</span>
+        <span>@Html.DisplayNameFor(model => model.Dni)</span>
+        <span>@Html.DisplayFor(model => model.Dni)</span>
+        <span>@Html.DisplayNameFor(model => model.Legajo)</span>
+        <span>@Html.DisplayFor(model => model.Legajo)</span>
+        <span>@Html.DisplayNameFor(model => model.Titulo)</span>
+        <span>@Html.DisplayFor(model => model.Titulo)</span>
+    </div>
+    <div>
+        <input type="submit" value="Eliminar" />
+    </div>
+</form>
